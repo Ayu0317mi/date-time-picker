@@ -1,5 +1,4 @@
 import DateTimePickerDialog from "@/components/time-picker/date-time-picker-dialog";
-import MutableLunchPlanDialog from "./lunchplan-dialog";
 import React from "react";
 // import DateTimePickerForm from "@/components/time-picker/date-time-picker-form";
 // import { DatePicker } from "@/components/ui/date-picker";
@@ -12,7 +11,6 @@ export default function Home() {
             {/* <DatePicker /> */}
             {/* <DateTimePickerForm /> */}
             <DateTimePickerDialog /> 
-            <MutableLunchPlanDialog />
         </div>
     );
 }
