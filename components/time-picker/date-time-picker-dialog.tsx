@@ -24,7 +24,8 @@ export default function DateTimePickerDialog() {
         </DialogTrigger>
         <DialogContent className="bg-slate-100 flex flex-col items-center justify-center">
           <DialogHeader>
-            <DialogTitle className="text-center">Select Date and Time</DialogTitle>
+            <DialogTitle className="text-center">Lunch Plan</DialogTitle>
+            <div>edit item and save</div>
           </DialogHeader>
 
           {/* Scrollable Content */}
@@ -85,6 +86,7 @@ export default function DateTimePickerDialog() {
               />
             </div>
           </div>
+          <Button variant="outline">Save</Button>
         </DialogContent>
       </Dialog>
     </>
