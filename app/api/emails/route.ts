@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import LunchBuddyInviteUserEmail from "@/app/emails/my-email";
 
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend('re_9Umw5D4d_Kqq3Mp7p3fDGKaoyzAX1shsy');
 
 export async function POST(request: Request) {
     const { email, firstname } = await request.json();
