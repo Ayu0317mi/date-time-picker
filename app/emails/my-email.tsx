@@ -26,7 +26,7 @@ interface LunchBuddyInviteUserEmailProps {
 }
 
 const baseUrl =
-  "https://github.com/Ayu0317mi/date-time-picker/tree/main/public";
+  "https://date-time-picker-email-demo.vercel.app/";
 
 export const LunchBuddyInviteUserEmail = ({
   username,
@@ -52,9 +52,9 @@ export const LunchBuddyInviteUserEmail = ({
             </Section>
             <Section className="text-center mt-[32px] mb-[32px]">
               <Img
-                src={`${baseUrl}/briefcase-icon.png`}
+                src={`${baseUrl}/briefcase-icon.svg`}
                 alt="Lunch Buddy icon"
-                className="w-[100px] h-[100px] rounded-full"
+                className="w-[24px] h-[24px]"
               />
             </Section>
             <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
