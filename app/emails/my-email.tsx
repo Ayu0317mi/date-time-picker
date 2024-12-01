@@ -14,7 +14,6 @@ import {
   Text,
   Tailwind,
 } from "@react-email/components";
-import { Briefcase } from "lucide-react";
 import * as React from "react";
 
 interface LunchBuddyInviteUserEmailProps {
@@ -45,17 +44,14 @@ export const LunchBuddyInviteUserEmail = ({
         <Body className="bg-white my-auto mx-auto font-sans px-2">
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] max-w-[465px]">
             <Section className="mt-[32px]">
-              <Link href="/" className="flex items-center gap-2">
-                <Briefcase className="w-8 h-8" />
+              <div className="flex items-center gap-2">
+                <Img
+                  src={`${baseUrl}/briefcase-icon.png`}
+                  alt="Lunch Buddy icon"
+                  className="w-[14px] h-[14px]"
+                />
                 <span className="className=text-lg font-semibold">Lunch Buddy</span>
-              </Link>
-            </Section>
-            <Section className="text-center mt-[32px] mb-[32px]">
-              <Img
-                src={`${baseUrl}/briefcase-icon.png`}
-                alt="Lunch Buddy icon"
-                className="w-[24px] h-[24px]"
-              />
+              </div>
             </Section>
             <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
               It s lunch time for <strong>{teamName}</strong> !
