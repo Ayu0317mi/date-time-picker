@@ -1,16 +1,30 @@
-import DateTimePickerDialog from "@/components/time-picker/date-time-picker-dialog";
-// import DateTimePickerForm from "@/components/time-picker/date-time-picker-form";
-// import { DatePicker } from "@/components/ui/date-picker";
-// import Image from "next/image";
+'use client';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Hello World</h1>
-      {/* <DatePicker /> */}
-      {/* <DateTimePickerForm /> */}
-      <DateTimePickerDialog />
-      
-    </div>
+    <main>
+      <h1>Send Email</h1>
+      <button
+        style={{
+          backgroundColor: '#007BFF',
+          color: 'white',
+          padding: '10px 20px',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+        }}
+        onClick={async () => {
+          await fetch('/api/emails', {
+        method: 'POST',
+        body: JSON.stringify({
+          email: "n0217ayumi@gmail.com",
+          firstname: "Ayumi",
+        }),
+          });
+        }}
+      >
+        Send Email
+      </button>
+    </main>
   );
 }
