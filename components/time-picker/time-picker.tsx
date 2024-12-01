@@ -19,7 +19,6 @@ export function TimePicker({ date, setDate }: TimePickerProps) {
   const minuteRef = React.useRef<HTMLInputElement>(null);
   const hourRef = React.useRef<HTMLInputElement>(null);
   const secondRef = React.useRef<HTMLInputElement>(null);
-  const periodRef = React.useRef<HTMLSelectElement>(null);
 
   const handlePeriodChange = (selectedPeriod: string) => {
     if (!date) return;

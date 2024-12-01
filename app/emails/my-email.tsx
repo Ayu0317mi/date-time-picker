@@ -3,7 +3,6 @@ import {
   Body,
   Button,
   Container,
-  Column,
   Head,
   Heading,
   Hr,
@@ -11,7 +10,6 @@ import {
   Img,
   Link,
   Preview,
-  Row,
   Section,
   Text,
   Tailwind,
@@ -28,7 +26,7 @@ interface LunchBuddyInviteUserEmailProps {
 }
 
 const baseUrl =
-  "http://localhost:3000"; // Local development
+  "https://github.com/Ayu0317mi/date-time-picker/tree/main/public";
 
 export const LunchBuddyInviteUserEmail = ({
   username,
@@ -54,13 +52,13 @@ export const LunchBuddyInviteUserEmail = ({
             </Section>
             <Section className="text-center mt-[32px] mb-[32px]">
               <Img
-                src={`${baseUrl}/briefcase-icon.svg`}
-                alt="Briefcase Icon"
-                className="mx-auto mt-[20px] mb-[20px] w-[100px] h-[100px]"
+                src={`${baseUrl}/briefcase-icon.png`}
+                alt="Lunch Buddy icon"
+                className="w-[100px] h-[100px] rounded-full"
               />
             </Section>
             <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
-              It's lunch time for <strong>{teamName}</strong> !
+              It s lunch time for <strong>{teamName}</strong> !
             </Heading>
             <Text className="text-black text-[14px] leading-[24px]">
               Hi {username},
@@ -95,7 +93,7 @@ export const LunchBuddyInviteUserEmail = ({
               This invitation was intended for{" "}
               <span className="text-black">{username}</span>. If you
               were not expecting this invitation, you can ignore this email. If
-              you are concerned about your account's safety, please reply to
+              you are concerned about your account s safety, please reply to
               this email to get in touch with us.
             </Text>
           </Container>
