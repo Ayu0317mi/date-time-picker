@@ -52,7 +52,7 @@ export const LunchBuddyInviteUserEmail = ({
             </Section>
             <Section className="text-center mt-[32px] mb-[32px]">
               <Img
-                src={`${baseUrl}/briefcase-icon.svg`}
+                src={`${baseUrl}/briefcase-icon.png`}
                 alt="Lunch Buddy icon"
                 className="w-[24px] h-[24px]"
               />
